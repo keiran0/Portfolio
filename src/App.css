@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@900&family=Roboto&family=Unna&display=swap');
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: linear-gradient(white, grey);
+  font-family: 'Roboto', sans-serif
+}
+
+header {
+  background-image: linear-gradient(rgba(26, 188, 237, 0.316), rgba(2, 2, 2, 0));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  line-height: 0;
+  margin: 0;
+  font-family: 'Cinzel', serif;
+}
+
+nav {
+  padding: 0;
+  margin: 0
+}
+
+nav button {
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+  font-family: 'Unna', serif;
+  font-size: large
+}
+nav button:hover {
+  text-decoration: underline;
+}
+
+main {
+  margin: 10%
+}
+
+i {
+  margin: 10px
+}
+
+.currentSkillsGrid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
