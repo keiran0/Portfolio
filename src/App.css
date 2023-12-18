@@ -2,52 +2,148 @@
 
 body {
   margin: 0;
-  height: 100vh;
-  background-image: linear-gradient(white, grey);
   font-family: 'Roboto', sans-serif
 }
 
-header {
-  background-image: linear-gradient(rgba(26, 188, 237, 0.316), rgba(2, 2, 2, 0));
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0;
-  padding: 20px;
+main.snap {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
-h1 {
-  line-height: 0;
-  margin: 0;
-  font-family: 'Cinzel', serif;
+section.snap {
+  height: 100vh;
+  scroll-snap-align: start;
 }
 
-nav {
-  padding: 0;
-  margin: 0
+/* home.jsx */
+
+li {
+  margin: 10px 0
 }
 
-nav button {
-  border: none;
-  background-color: transparent;
-  padding: 10px;
-  font-family: 'Unna', serif;
-  font-size: large
-}
-nav button:hover {
-  text-decoration: underline;
-}
-
-main {
-  margin: 10%
-}
-
-i {
-  margin: 10px
+.skill-icon {
+  margin: 0 10px
 }
 
 .currentSkillsGrid {
   display: grid;
   grid-template-columns: auto auto auto;
+}
+
+.home-section{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  padding: 0 20%;
+  margin: 0;
+}
+
+#introduction {
+  background-color: white;
+}
+
+#currentSkills {
+  background-image: linear-gradient(white, grey);
+}
+
+#currentLearning {
+  background-image: linear-gradient(grey, black);
+  color: white;
+  button {
+    color:white
+  }
+}
+
+.home-container {
+  display: grid;
+  grid-template-columns: 80% 40%;
+}
+
+.actions {
+  display:flex;
+  align-items:center;
+  background-color: transparent;
+  border: none;
+  justify-content: flex-end;
+  font-size: large;
+  font-family: 'Cinzel', serif;
+}
+.actions:hover {
+  .fa-angles-right{
+    color: turquoise
+  }
+
+  .fa-angles-left{
+    color: turquoise
+  }
+
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  padding:2px 5px;
+  background-color: turquoise;
+  border: 1px solid white;
+  margin: 5px
+}
+a:hover {
+  color:white
+}
+
+.project-wrapper {
+  display:grid;
+  align-items:center;
+  grid-template-columns: 30% 70%;
+  background-image:linear-gradient(-45deg, black, white); 
+  padding: 0 5%;
+}
+
+.back-button {
+  margin: 30px;
+  border-radius: 50%;
+  padding: 12px 13px;
+  background-color: turquoise;
+  border: none
+}
+.back-button:hover {
+  color:white
+}
+
+.project-mode {
+  position:absolute;
+}
+
+embed {
+  height: 90vh;
+  width: 60vw
+}
+
+/* category.jsx */
+
+.categories {
+  display:grid;
+  grid-template-columns: repeat(3, 33%);
+  
+  
+}
+
+.category {
+  margin: 10%;
+  background-color:rgba(135, 135, 135, 0.293);
+  border-radius: 15px;
+  height: 70vh;
+}
+
+.category:hover {
+  h2 {
+    color: turquoise
+  }
+}
+
+.category-container {
+  margin: 50px;
 }
 
