@@ -26,7 +26,7 @@ function App() {
       {mode == 'learning' && <Categories data={data.learning} mode={mode} handleCategoryClick={handleCategoryClick} handleBack={()=>{setMode('home')}}/>}
       {mode == 'showcase-projects' && <Projects handleBack={()=>{setMode('showcase')}} data={data.showcase[projectIndex].projects}/>}
       {mode == 'learning-projects' && <Projects handleBack={()=>{setMode('learning')}} data={data.learning[projectIndex].projects}/>}
-      {mode == 'contact' && <Contact/>}
+      {mode == 'contact' && <Contact handleBack={()=>{setMode('home')}}/>}
     </>
   )
 }

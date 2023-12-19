@@ -8,8 +8,12 @@ export default function Home({handleClickContact, handleClickCategory, handleCli
             <section id="introduction" className="home-section snap">
                 <div className="home-container">
                     <div>
-                        <h2>Hi. I am Keiran, an aspiring student.</h2>
-                        <p>I am primarily a hobbyist, but I do implement some of these skills at work, namely VBA, SQL server, and Tableau, though they are not part of my job description. However, I hope to turn these skills into a full-time career in the future.</p>
+                        <h2>Hi. I am Keiran, a problem solver and aspiring student.</h2>
+                        <p>I first discovered coding during an internship, where an engineer showed me how she managed to automate some tasks using VBA. From there, I started learning some basic VBA to help automate my own tasks as well.</p>
+                        <p>During my first job out of polytechnic, I grew curious about the potential ways to automate some of the tasks related to Microsoft Office, which led to me learning Python.</p>
+                        <p>Years after leaving that job, I took my second specialist diploma - in automation and robotics. I found the automation side particularly fascinating and had exposure to ladder programming with various inputs and outputs, as well as robot teaching.</p>
+                        <p>At my current job, I found a knowledge gap, and I wrote SQL queries and integrated them with Tableau to help solve the issue. Occasionally, I troubleshoot other SQL queries and help with VBA code when needed.</p>
+                        <p>All those jobs did not include 'coding' as part of their job description. I want to change that moving forward, as those moments brings me the most joy during my work day.</p>
                     </div>
                     <NavigationButton onClick={handleClickContact}>
                         <p>Contact and other links</p></NavigationButton>
